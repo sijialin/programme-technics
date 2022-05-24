@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserActivity">
+    <RelativeLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/user_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:src="@drawable/user_back" />
+
+        <TextView
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="170dp"
+            android:gravity="center_vertical"
+            android:text="Settings"
+            android:textColor="@color/grey"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/grey">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:onClick="onClick"
+                android:src="@drawable/main_potato" />
+
+            <TextView
+                android:id="@+id/displayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/user_photo"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:shadowColor="#909BCE"
+                android:shadowDx="10.0"
+                android:shadowDy="10.0"
+                android:shadowRadius="3.0"
+                android:text="Wenjie"
+                android:textColor="@color/item_purple"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/displayWhatsup"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/displayName"
+                android:layout_toRightOf="@id/user_photo"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="3dp"
+                android:text="Be Better every day!" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    android:text="ID"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/user_ID"
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="6666"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_shape">
+
+                <TextView
+                    android:id="@+id/register_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    android:text="Register date"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/user_registerDate"
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="2022-05-08"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_shape">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="@string/name"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/user_intoName"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    android:text="Wenjie"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/user_intoName"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClick"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/user_into" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_shape">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="@string/password"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/user_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/user_intoPassword"
+                    android:padding="10dp"
+                    android:text="******"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/user_intoPassword"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClick"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/user_into" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="Gender"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:id="@+id/user_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/user_intoGender"
+                    android:padding="10dp"
+                    android:text="Female"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/user_intoGender"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClick"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/user_into" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_shape">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="What's up"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/user_intoWhatsup"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClick"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/user_into" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_shape">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="@string/question"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/user_intoQ"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClick"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/user_into" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/user_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textStyle="italic"
+                android:textColor="#b41f56"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:onClick="onClick"
+                android:gravity="bottom"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/purple"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/dialog3_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="onClick"
+            android:src="@drawable/error"
+            android:layout_marginLeft="5dp"
+            android:padding="8dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How is going on today?"
+        android:padding="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/user_input"
+        android:hint="Be better everyday"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/user_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:onClick="onClick"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/user_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="cancel"
+            android:onClick="onClick"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

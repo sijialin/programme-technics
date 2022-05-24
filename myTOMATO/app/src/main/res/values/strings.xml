@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">A list of a potato</string>
+    <string name="main_today">today: 0</string>
+    <string name="main_recent">recent: 0</string>
+    <string name="main_date">Thurs 03/31</string>
+    <string name="ddl_today">today</string>
+    <string name="ddl_recent">recent</string>
+
+    <string name="ddl_today_time">12:00</string>
+    <string name="notes">Add Notes</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="question">Help</string>
+    <string name="register"><u>register?</u></string>
+    <string name="Edit"><u>Edit</u></string>
+    <string name="Delete"><u>Delete</u></string>
+    <string name="logout"><u>Log out</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/purple"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gender_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/error"
+            android:layout_marginLeft="5dp"
+            android:padding="8dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/gender_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="please choose your gender:"
+        android:padding="10dp"
+
+        android:gravity="center"/>
+    <RadioGroup
+        android:id="@+id/genderinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        >
+        <RadioButton
+            android:id="@+id/gender_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FEMALE"/>
+        <RadioButton
+            android:id="@+id/gender_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MALE"/>
+        <RadioButton
+            android:id="@+id/gender_unknown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNKNOWN"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/gender_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/gender_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="cancel"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

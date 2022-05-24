@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".fragment_add.TodayFragment">
+
+    <RelativeLayout
+        android:id="@+id/frag_item_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/frag_item_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/item_more" />
+
+        <TextView
+            android:id="@+id/frag_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/frag_item_image"
+            android:fontFamily="serif"
+            android:text="other"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/frag_item_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:hint="@string/notes" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/frag_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/frag_item_top"
+        android:background="@color/grey"
+        />
+
+    <GridView
+        android:id="@+id/frag_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_line"
+        android:background="@color/white"
+        android:numColumns="5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"></GridView>
+
+    <TextView
+        android:id="@+id/frag_choose_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_gv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Choose your time:"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/frag_time3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_choose_time"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/frag_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Today"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/frag_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="00:00"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/frag_choose_times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frag_time3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:text="choose the number of times:"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/frag_times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/frag_choose_times"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/frag_times_input"
+            android:singleLine="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/frag_choose_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frag_times"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Choose your color:"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/frag_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frag_choose_color"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/frag_color_red"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/color_red" />
+
+        <ImageButton
+            android:id="@+id/frag_color_yellow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/color_yellow" />
+
+        <ImageButton
+            android:id="@+id/frag_color_green"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/color_green" />
+
+        <ImageButton
+            android:id="@+id/frag_color_blue"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/color_blue" />
+
+        <ImageButton
+            android:id="@+id/frag_color_darkblue"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/color_purple" />
+
+        <ImageButton
+            android:id="@+id/frag_color_realpurple"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/color_realpurple" />
+
+        <ImageButton
+            android:id="@+id/frag_color_black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/color_black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/frag_choose_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Choose your label:"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/frag_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_choose_label"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/frag_important"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Important"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/frag_urgent"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Urgent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/frag_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Appointment"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/frag_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Email"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/frag_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_label"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:text="submit" />
+
+
+
+</RelativeLayout>

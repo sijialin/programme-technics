@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/themelogo"
+        android:layout_width="240dp"
+        android:layout_height="270dp"
+        android:src="@drawable/main_potato"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"/>
+
+    <EditText
+        android:id="@+id/login_name"
+        android:fontFamily="serif"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center"
+        android:hint="@string/name"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:fontFamily="serif"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center"
+        android:hint="@string/password"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="280dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_shape"
+        android:text="login"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="onClick"
+        />
+    <TextView
+        android:id="@+id/main_register"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/register"
+        android:background="@null"
+        android:textStyle="italic"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
